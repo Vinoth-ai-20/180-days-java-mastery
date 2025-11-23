@@ -1,25 +1,22 @@
 package day01.basics;
 
+import java.util.Scanner;
+
 public class Day01Main {
     public static void main(String[] args) {
-        Book book1 = new Book();
-        book1.title = "The Alchemist";
-        book1.author = "Paulo Choleo";
-        book1.pages = 150;
 
+        Book book1 = new Book("The Alchemist", "Paulo Choleo", 150);
         book1.displayInfo();
         System.out.println("Is the book long: " + book1.isLongBook());
-
         System.out.println("\n --- \n");
 
-        Book book2 = new Book();
-        book2.title = "Maadhorupagan";
-        book2.author = "Perumal Murugan";
-        book2.pages = 189;
-
+        Book book2 = new Book("Maadhorupagan", "Perumal Murugan", 189);
         book2.displayInfo();
         System.out.println("Is the book long: " + book2.isLongBook());
 
+        book1.setPages(-10);
+        book1.setPages(359);
+        System.out.println("Updated Pages: "+ book1.getPages());
         System.out.println("\n --- \n");
 
         //Test Student Class
@@ -67,5 +64,6 @@ public class Day01Main {
         System.out.println("Divide: " + calculator1.division(12, 12));
 
         System.out.println("\n --- \n");
+
     }
 }
