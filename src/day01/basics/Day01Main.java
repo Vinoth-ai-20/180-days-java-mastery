@@ -53,6 +53,8 @@ public class Day01Main {
         System.out.println("Multiply: " + calculator1.multiply(12, 12));
         System.out.println("Divide: " + calculator1.division(12, 12));
 
+        System.out.println("Square Root: " + calculator1.squareRoot(121));
+
         System.out.println("\n --- \n");
 
         System.out.println("--- Test - Person Class ---");
@@ -71,5 +73,27 @@ public class Day01Main {
         rectangle2.setLength(22);
         rectangle2.setWidth(10);
         rectangle2.displayDetails();
+
+        Book book = new Book("God of rings", "larry", 300);
+        book.displayInfo();
+        System.out.println(book.getTitle());
+        book.setTitle("Computers");
+        System.out.println(book.getTitle());
+        System.out.println(book.isLongBook());
+
+        String str = "hello Boy";
+        System.out.println(str.trim());
+        System.out.println(str.split(" ").length);
+
+        System.out.println(" --- Using String Helper Class --- ");
+        StringHelper stringHelper = new StringHelper();
+        System.out.println(stringHelper.reversedString("Hey Bro!"));
+        System.out.println(stringHelper.countVowel("aeiou"));
+        System.out.println(stringHelper.isPalindrome("mom"));
+
+        System.out.println(" --- Using prime checker Class --- ");
+        PrimeChecker primeChecker = new PrimeChecker();
+        System.out.println(primeChecker.isPrime(7));
+        System.out.println(primeChecker.isPrime(4321123));
     }
 }
