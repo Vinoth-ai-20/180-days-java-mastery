@@ -6,9 +6,10 @@ public class PrimeChecker {
             return false;
         }
         if (isEven(num) && num != 2) {
+
             return false;
         }
-        return true;
+        return !hasOddDivisors(num);
     }
 
     private boolean isValidInput(int num) {
