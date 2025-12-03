@@ -1,7 +1,6 @@
 package day01.basics;
 
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class Day01Main {
     public static void main(String[] args) {
