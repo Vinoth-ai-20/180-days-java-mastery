@@ -1,5 +1,6 @@
 package day01.basics;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Day01Main {
@@ -95,5 +96,21 @@ public class Day01Main {
         PrimeChecker primeChecker = new PrimeChecker();
         System.out.println(primeChecker.isPrime(7));
         System.out.println(primeChecker.isPrime(4321123));
+
+        System.out.println(" --- Using Array Basics Class --- ");
+        ArrayBasics ab = new ArrayBasics();
+        ab.displayArray();
+        ab.showLength();
+        ab.showElements();
+
+        System.out.println(" --- Using Array Utils Class --- ");
+        ArrayUtils arrayUtils = new ArrayUtils();
+        int[] array = {10, 32, 14, 33, 89};
+        System.out.println(arrayUtils.findMax(array));
+        System.out.println(arrayUtils.findMin(array));
+        System.out.println(arrayUtils.calculateSum(array));
+        System.out.println(arrayUtils.calculateAverage(array));
+        System.out.println(arrayUtils.findIndex(array, 89));
+        System.out.println(Arrays.toString(arrayUtils.getReverseArray(array)));
     }
 }
