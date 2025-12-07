@@ -111,5 +111,18 @@ public class Day01Main {
         System.out.println(arrayUtils.calculateAverage(array));
         System.out.println(arrayUtils.findIndex(array, 89));
         System.out.println(Arrays.toString(arrayUtils.getReverseArray(array)));
+
+        System.out.println(" --- Using Pattern printer Class --- ");
+        PatternPrinter patternPrinter = new PatternPrinter();
+        patternPrinter.printRectangle(5, 6);
+        System.out.println("Right Triangle");
+        patternPrinter.printRightTriangle(5);
+        patternPrinter.otherRightTriangle(10);
+        patternPrinter.InverseRightTriangle(5);
+        patternPrinter.pyramid(5);
+        patternPrinter.printDiamond(10);
+        patternPrinter.printHollowRectangle(9, 16);
+        patternPrinter.printNumberTriangle(5);
+        patternPrinter.printMultiplicationTable(10);
     }
 }
